@@ -1,14 +1,68 @@
+/* ====================================================
+   src/index.css
+==================================================== */
+
+/*
+====================================================
+IMPORTAMOS TAILWIND
+====================================================
+*/
+
 @import "tailwindcss";
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #fff7f9;
-}
+/*
+====================================================
+RESET GENERAL
+====================================================
+Quitamos márgenes por defecto
+y mejoramos el render visual.
+====================================================
+*/
 
-
-body{
+*{
   margin:0;
   padding:0;
+  box-sizing:border-box;
+}
+
+/*
+====================================================
+BODY
+====================================================
+Color principal pastel.
+====================================================
+*/
+
+body{
+
   font-family: Arial, Helvetica, sans-serif;
+
+  background:#fff8fb;
+
+  overflow-x:hidden;
+
+  color:#333;
+}
+
+/*
+====================================================
+SCROLLBAR AESTHETIC
+====================================================
+*/
+
+::-webkit-scrollbar{
+  width:12px;
+}
+
+::-webkit-scrollbar-track{
+  background:#ffeaf3;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#ff9fc7;
+  border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#ff7fb5;
 }

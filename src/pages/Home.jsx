@@ -1,25 +1,44 @@
+// src/pages/Home.jsx
+
+/*
+====================================================
+HOME
+====================================================
+*/
+
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import FeaturedProducts from "../components/FeaturedProducts";
-import Footer from "../components/Footer";
+import Categories from "../components/Categories";
+import Featured from "../components/Featured";
 import Catalog from "../components/Catalog";
+import About from "../components/About";
+import Footer from "../components/Footer";
 
 function Home() {
-    return (
-        <div className="bg-[#fff4f7] min-h-screen overflow-hidden">
 
-            <Navbar />
+  return (
 
-            <Hero />
+    <main className="bg-[#fff8fb] overflow-hidden">
 
-            <Catalog />
+      <Navbar />
 
-            <FeaturedProducts />
+      <Hero />
 
-            <Footer />
+      <Categories />
 
-        </div>
-    );
+      <Featured />
+
+      {/* NUEVO CATALOGO */}
+
+      <Catalog />
+
+      <About />
+
+      <Footer />
+
+    </main>
+
+  );
 }
 
 export default Home;
